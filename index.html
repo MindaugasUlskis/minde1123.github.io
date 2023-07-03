@@ -8,12 +8,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1e1e1e;
-            color: #ffffff;
+            background-color: #f4f4f4; /* Updated background color */
+            color: #333333; /* Updated text color */
         }
 
         header {
-            background-color: #461257;
+            background-color: #461257; /* Updated background color */
             padding: 20px;
             position: fixed;
             top: 0;
@@ -34,12 +34,12 @@
 
         .name {
             font-size: 24px;
-            color: #ffffff;
+            color: #ffffff; /* Updated text color */
             margin-right: 20px;
         }
 
         nav a {
-            color: #ffffff;
+            color: #ffffff; /* Updated text color */
             text-decoration: none;
             margin-right: 50px;
             font-size: 18px;
@@ -50,30 +50,34 @@
         }
 
         .container {
-            max-width: 1000px;
-            margin: 120px auto;
-            padding: 20px;
-            background-color: #252525;
-            border-radius: 10px;
-        }
+      max-width: 1000px;
+      margin: 120px auto;
+      padding: 20px;
+      background-color: #ffffff; /* Updated background color */
+      border-radius: 250px;
+    }
 
-        .section {
-            padding: 50px;
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
+    .container::after(:first-child) {
+      margin-top: 1px; /* Reduce margin top for sections after the first section */
+    }
 
-        .section:before {
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 2px;
-            width: 60%;
-            background-color: #3c3c3c;
-        }
+    .section {
+      padding: 50px;
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section:before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: 60%;
+      background-color: #461257; /* Updated line color */
+    }
 
         .section-name {
             text-align: left;
@@ -81,26 +85,28 @@
             margin-bottom: 20px;
             font-weight: bold;
             font-size: 24px;
-            color: #ffffff;
-            background-color: #333;
+            color: #333333; /* Updated text color */
+            background-color: #f9f9f9; /* Updated background color */
             padding: 10px 20px;
             border-radius: 5px;
             display: inline-block;
         }
 
         .section-name:hover {
-            background-color: #555;
+            background-color: #461257; /* Updated background color */
+            color: #ffffff;
         }
 
         .section-content {
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 40px;
+            color: #333333; /* Updated text color */
         }
 
         footer {
-            background-color: #333;
-            color: #ffffff;
+            background-color: #f9f9f9; /* Updated background color */
+            color: #333333; /* Updated text color */
             padding: 20px;
             text-align: center;
             border-top-left-radius: 10px;
@@ -121,7 +127,7 @@
         .tab {
             flex: 1 1 200px;
             margin: 10px;
-            background-color: #252525;
+            background-color: #ffffff; /* Updated background color */
             border-radius: 10px;
             overflow: hidden;
             transition: transform 0.3s;
@@ -149,10 +155,12 @@
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
+            color: #333333; /* Updated text color */
         }
 
         .tab-description {
             font-size: 16px;
+            color: #666666; /* Updated text color */
         }
 
         @media screen and (max-width: 600px) {
@@ -164,14 +172,14 @@
         .resume-button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
+            background-color: #461257; /* Updated background color */
+            color: #ffffff; /* Updated text color */
             text-decoration: none;
             border-radius: 5px;
         }
 
         .resume-button:hover {
-            background-color: #555;
+            background-color: #dddddd; /* Updated background color */
         }
     </style>
 </head>
@@ -210,7 +218,7 @@
                 <ul>
                     <li>Programming Languages: Java, C#, Python, JavaScript</li>
                     <li>Web Development: HTML5, CSS3, JavaScript, TypeScript</li>
-                    <li>Frameworks: .NET, React native</li>
+                    <li>Frameworks: .NET, React Native</li>
                     <li>Database: SQL, Firebase, PostgreSQL</li>
                     <li>Version Control: Git</li>
                     <li>Software Development Methodologies: Agile, Scrum</li>
@@ -226,37 +234,37 @@
                 <!-- Tab section start -->
                 <div class="tab-container">
                     <div class="tab-list">
-                      <a class="tab" href="https://github.com/minde1123/TaskerApp/blob/main/README.md" target="_blank">
-                        <img class="tab-image" src="Assets/TaskerApp.png" alt="Project 1">
-                        <div class="tab-content">
-                          <h3 class="tab-title">Tasker App</h3>
-                          <p class="tab-description">The Tasker App is a minimal viable product (MVP) application that allows users to manage customer tasks. click to see more...</p>
-                        </div>
-                      </a>
-                      <a class="tab" href="https://github.com/example-project-2">
-                        <img class="tab-image" src="https://placekitten.com/400/300" alt="Project 2">
-                        <div class="tab-content">
-                          <h3 class="tab-title">Project 2</h3>
-                          <p class="tab-description">Project 2 description</p>
-                        </div>
-                      </a>
-                      <a class="tab" href="https://github.com/example-project-3">
-                        <img class="tab-image" src="https://placekitten.com/400/300" alt="Project 3">
-                        <div class="tab-content">
-                          <h3 class="tab-title">Project 3</h3>
-                          <p class="tab-description">Project 3 description</p>
-                        </div>
-                      </a>
-                      <a class="tab" href="https://github.com/example-project-4">
-                        <img class="tab-image" src="https://placekitten.com/400/300" alt="Project 4">
-                        <div class="tab-content">
-                          <h3 class="tab-title">Project 4</h3>
-                          <p class="tab-description">Project 4 description</p>
-                        </div>
-                      </a>
+                        <a class="tab" href="https://github.com/minde1123/TaskerApp/blob/main/README.md" target="_blank">
+                            <img class="tab-image" src="Assets/TaskerApp.png" alt="Project 1">
+                            <div class="tab-content">
+                                <h3 class="tab-title">Tasker App</h3>
+                                <p class="tab-description">The Tasker App is a minimal viable product (MVP) application that allows users to manage customer tasks. click to see more...</p>
+                            </div>
+                        </a>
+                        <a class="tab" href="https://github.com/example-project-2">
+                            <img class="tab-image" src="https://placekitten.com/400/300" alt="Project 2">
+                            <div class="tab-content">
+                                <h3 class="tab-title">Project 2</h3>
+                                <p class="tab-description">Project 2 description</p>
+                            </div>
+                        </a>
+                        <a class="tab" href="https://github.com/example-project-3">
+                            <img class="tab-image" src="https://placekitten.com/400/300" alt="Project 3">
+                            <div class="tab-content">
+                                <h3 class="tab-title">Project 3</h3>
+                                <p class="tab-description">Project 3 description</p>
+                            </div>
+                        </a>
+                        <a class="tab" href="https://github.com/example-project-4">
+                            <img class="tab-image" src="https://placekitten.com/400/300" alt="Project 4">
+                            <div class="tab-content">
+                                <h3 class="tab-title">Project 4</h3>
+                                <p class="tab-description">Project 4 description</p>
+                            </div>
+                        </a>
                     </div>
-                  </div>
-                  
+                </div>
+
                 <!-- Tab section end -->
             </div>
         </section>
@@ -268,8 +276,8 @@
             <div class="section-content">
                 <p>If you have any questions or would like to discuss potential opportunities, feel free to reach out to
                     me:</p>
-                <p>Email: umindaugas38@gmail.com</p>
-                <p>Phone: +370 60378483</p>
+                    <p><strong>Email:</strong> umindaugas38@gmail.com</p>
+                <p><strong>Phone:</strong> +370 60378483</p>
             </div>
         </section>
     </div>
